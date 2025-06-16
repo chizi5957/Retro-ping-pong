@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Retro Pong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Ping Pong</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 id="level">Level: 1</h1>
-  <div id="gameContainer">
-    <canvas id="gameCanvas" width="360" height="500"></canvas>
-    <div id="gameOverScreen">
-      <p id="finalScoreText"></p>
+  <div id="level">Level: 1</div>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="300" height="450"></canvas>
+    <div id="gameOverScreen" class="hidden">
+      <h2>Game Over</h2>
+      <p id="finalScore"></p>
       <p id="bestScoreText"></p>
       <button id="playAgainBtn">PLAY AGAIN</button>
     </div>
