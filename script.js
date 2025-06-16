@@ -5,8 +5,8 @@ const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
 // Ball and paddle setup
 let ball = { x: canvas.width / 2, y: canvas.height - 30, radius: 8 };
-let dx = isMobile ? 1 : 1;
-let dy = isMobile ? -1 : -1;
+let dx = isMobile ? 2 : 2;
+let dy = isMobile ? -2 : -2;
 let paddleHeight = 10;
 let paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
