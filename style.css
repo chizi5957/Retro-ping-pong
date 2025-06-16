@@ -1,61 +1,62 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 body {
-  background-color: #002652;
-  font-family: 'Press Start 2P', monospace;
   margin: 0;
   padding: 0;
+  background-color: #002652;
+  font-family: 'Press Start 2P', cursive;
+  color: rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   height: 100vh;
-  color: rgba(255, 255, 255, 0.95);
 }
 
 #level {
   margin-top: 32px;
-  margin-bottom: 12px;
-  color: #FFEB3B;
+  font-size: 16px;
+  color: #FFD700;
 }
 
-#gameContainer {
+#game-container {
   position: relative;
-  border: 4px solid yellow;
+  margin-top: 10px;
+  border: 4px solid #FFD700;
   border-radius: 10px;
+  background-color: #001F3F;
 }
 
 #gameCanvas {
-  background-color: transparent;
   display: block;
+  background-color: transparent;
 }
 
 #gameOverScreen {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  border-radius: 10px;
   text-align: center;
-  display: none;
+  background-color: rgba(0,0,0,0.75);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
 }
 
-#finalScoreText, #bestScoreText {
-  color: rgba(255, 255, 255, 0.95);
-  margin: 10px 0;
+#gameOverScreen h2 {
+  color: red;
+  margin: 0 0 10px;
 }
 
 #playAgainBtn {
   margin-top: 20px;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 12px;
-  background-color: #FFD600;
-  color: black;
+  background-color: #FFD700;
   border: none;
   padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
